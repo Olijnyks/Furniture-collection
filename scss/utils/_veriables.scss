@@ -1,0 +1,10 @@
+$colors: (
+	'primary-text': rgba(90, 90, 90, 1),
+	'title': rgba(54, 56, 56, 0.9),
+);
+
+@function getColor($key) {
+	@return map-get($colors, $key);
+}
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
