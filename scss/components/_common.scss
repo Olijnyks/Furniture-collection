@@ -27,11 +27,22 @@ font-size: 16px;
 line-height: 1.68em;
 color: getColor('primary-text');
 }
-.container{
-	width: 1140px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0 auto;
+
+section{
+margin-bottom: 80px;
+}
+.title{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 36px;
+line-height: 1.45em;
+color: getColor('extra-bg');
+text-align: center;
+}
+
+.logo--position{
+	width: 44px;
+   margin: 0 auto;
 }
 
 .visually-hidden {

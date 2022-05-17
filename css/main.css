@@ -282,6 +282,7 @@ summary {
   font-display: swap;
 }
 
+@im @import './components/container';
 ul {
   list-style: none;
   padding: 0;
@@ -313,10 +314,21 @@ body {
   color: #5a5a5a;
 }
 
-.container {
-  width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
+section {
+  margin-bottom: 80px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.45em;
+  color: #363838;
+  text-align: center;
+}
+
+.logo--position {
+  width: 44px;
   margin: 0 auto;
 }
 
@@ -334,20 +346,50 @@ body {
   overflow: hidden;
 }
 
+.header {
+  position: relative;
+  height: 90px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .header {
+    height: 120px;
+  }
+}
+
 .menu {
+  display: none;
   padding: 40px 0;
-  background-color: red;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu__item + .menu__item {
+  margin-left: 80px;
+}
+
+.menu__item:first-child {
+  margin-left: 30px;
+}
+
+.menu__item:last-child {
+  margin-right: 30px;
 }
 
 .menu__link {
@@ -356,5 +398,241 @@ body {
   font-size: 16px;
   line-height: 1.37em;
   color: rgba(54, 56, 56, 0.9);
+}
+
+.logo--mobile {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .logo--mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.mobile-menu__button {
+  z-index: 100;
+  fill: currentColor;
+  border: none;
+  background-color: transparent;
+  color: rgba(54, 56, 56, 0.9);
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu__button .mobile-menu__icon-close {
+  display: none;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon-close {
+  display: block;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon-menu {
+  display: none;
+}
+
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  color: #5a5a5a;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 600px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+  background-color: rgba(151, 151, 151, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu__nav.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.mobile-menu__items {
+  padding: 40px;
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__nav.is-open .mobile-menu__items {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu__item {
+  font-size: 34px;
+}
+
+.mobile-menu__item + .mobile-menu__item {
+  margin-top: 20px;
+}
+
+.mobile-menu__item:first-child {
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-color: #363838;
+  background-image: url("../img/hero/hero@1x.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/hero/hero@2x.jpeg");
+  }
+}
+
+.hero__box {
+  background-color: rgba(255, 255, 240, 0.7);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  border-radius: 20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.hero__information {
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+@media (min-width: 900px) {
+  .hero__information {
+    width: 535px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .hero__information {
+    width: 635px;
+  }
+}
+
+.hero__title {
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.22em;
+  color: rgba(54, 56, 56, 0.9);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.hero__title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: #979797;
+  width: 185px;
+  height: 1px;
+}
+
+@media (min-width: 600px) {
+  .hero__title {
+    font-size: 62px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__title {
+    font-size: 94px;
+  }
+}
+
+.new-collection__title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.new-collection__title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 25px);
+          transform: translate(-50%, 25px);
+  width: 254px;
+  height: 1px;
+  background-color: #979797;
+  text-align: center;
+}
+
+.new-collection__text {
+  text-align: center;
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .new-collection__text {
+    width: 500px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .new-collection__text {
+    width: 730px;
+  }
+}
+
+.new-collection__caption {
+  color: #363838;
+  width: 700px;
+  font-size: 20px;
+  line-height: 1.2em;
 }
 /*# sourceMappingURL=main.css.map */

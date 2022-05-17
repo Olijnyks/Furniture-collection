@@ -4,28 +4,96 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Home furniture</title>
 	<link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<div class="container">
 			<nav class="menu">
 				<ul class="menu__items">
 				<li class="menu__item"><a class="menu__link" href="">About</a></li>
 				<li class="menu__item"><a class="menu__link" href="">Gallery</a></li>
-				<li class="menu__item"><a class="logo" href="./index.html">
+				</ul>
+				<a class="logo logo--position" href="./index.html">
 					<svg class="logo__img" width=55 height=40>
 						<use href='./img/sprite.svg#logo'></use>
 					</svg>
-				</a></li>
-				<li class="menu__item"><a class="menu__link" href="">Blog</a></li>
-				<li class="menu__item"><a class="menu__link" href="">Contact</a></li>
-			</ul>
+				</a>
+				<ul class="menu__items">
+					<li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+				</ul>
 			</nav>
+			<div class="mobile-menu">
+				<a class="logo logo--mobile" href="./index.html">
+					<svg class="logo__img" width=55 height=40>
+						<use href='./img/sprite.svg#logo'></use>
+					</svg>
+				</a>
+				<button 
+				class="mobile-menu__button"
+				type="button"
+				aria-expanded="false"
+				aria-controls="mobile-menu__nav"
+				data-menu-button>
+			<svg class="mobile-menu__img" width=40 height=30 aria-label="switch menu">
+				<use class="mobile-menu__icon-menu" href='./img/sprite.svg#menu'></use>
+				<use class="mobile-menu__icon-close" href='./img/sprite.svg#close'></use>
+			</svg>
+			</button>
+				<nav class="mobile-menu__nav" id="mobile-menu__nav" data-menu>
+					<ul class="mobile-menu__items">
+						<li class="mobile-menu__item"><a class="logo" href="./index.html">
+							<svg class="logo__img" width=55 height=40>
+								<use href='./img/sprite.svg#logo'></use>
+							</svg>
+						</a></li>
+						<li class="mobile-menu__item"><a class="menu__link" href="">About</a></li>
+						<li class="mobile-menu__item"><a class="menu__link" href="">Gallery</a></li>
+						<li class="mobile-menu__item"><a class="menu__link" href="">Blog</a></li>
+						<li class="mobile-menu__item"><a class="menu__link" href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="hero__box">
+					<div class="hero__information">
+						<h1 class="hero__title">Furniture <br> collection</h1>
+						<p class="hero__text">Enjoy our selection of minimalist furniture from upcoming and established Brands</p>
+				</div>
+				</div>
+			</div>
+		</section>
+		<section class="new-collection">
+			<div class="container">
+				<h2 class="new-collection__title title">Furniture new collection</h2>
+				<p class="new-collection__text">
+					We love clean shapes and a neutral color palette and haptics of raw materials like metal, wood, stone or leather
+				</p>
+				<ul class="new-collection__items">
+					<li class="new-collection__item">
+						<a class="new-collection__link" href="#">
+							<img srcset="./img/new-collection/new-1@1x.jpeg 1x, ./img/new-collection/new-1@2x.jpeg 2x"
+								src="./img/new-collection/new-1@1x.jpeg" alt="photo of furniture" width="350" height="350">
+							<div class="new-collection__box">
+								<p class="new-collection__caption">
+									<span>Home furniture</span> offers a fine curated collection of contemporary design, home goods and
+									furniture.
+								</p>
+								</div>
+								</a>
+								</li>
+								</ul>
+			</div>
+		</section>
+	</main>
 	<footer></footer>
+
+	<script src="./js/menu.js"></script>
 </body>
 </html>

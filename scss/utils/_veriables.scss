@@ -1,6 +1,12 @@
 $colors: (
 	'primary-text': rgba(90, 90, 90, 1),
 	'title': rgba(54, 56, 56, 0.9),
+
+
+	'accent':rgba(255, 255, 240, 0.7),
+	'extra-bg':rgba(54, 56, 56, 1),
+
+	'line':rgba(151, 151, 151, 1),
 );
 
 @function getColor($key) {

@@ -1,15 +1,35 @@
+.header{
+	position: relative; 
 
+	height: 90px;
+	width: 100%;
+	@include for-tablet-up{
+		height: 120px;
+	}
+}
 .menu {
+	display: none;
 	padding: 40px 0;
-	background-color: red;
+
+	@include for-tablet-up{
+		display: flex;
+	}
 }
 .menu__items {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
 }
 
 .menu__item {
+	& + &{
+		margin-left: 80px;
+	}
+	&:first-child{
+		margin-left: 30px;
+	}
+	&:last-child{
+		margin-right: 30px;
+	}
 }
 
 .menu__link {
@@ -20,3 +40,91 @@
 	color: getColor('title');
 }
 
+//------mobile-menu-----------
+.logo--mobile{
+	display: none;
+	@include for-phone-only{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	}
+}
+.mobile-menu{
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 0;
+}
+.mobile-menu__button{
+	z-index: 100;
+	fill: currentColor;
+   border: none;
+   background-color: transparent;
+	color: getColor('title');
+	margin: 0;
+	padding: 0;
+	& .mobile-menu__icon-close{
+		display: none;
+	}
+	&.is-open .mobile-menu__icon-close{
+		display: block;
+	}
+	&.is-open .mobile-menu__icon-menu{
+		display: none;
+	}
+	&:hover, &:focus{
+		color: getColor('primary-text');
+		transition: color 250ms $timing-function;
+	}
+	@include for-tablet-up{
+		display: none;
+	}
+}
+.mobile-menu__nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+	z-index: 90;
+	background-color: rgba(151, 151, 151, 0.3),;
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+
+	// transform: translateX(-100%);
+	// transition: transform 250ms $timing-function, opacity 250ms $timing-function 250ms, visibility 250ms $timing-function 250ms;
+	&.is-open{
+
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
+
+	}
+}
+.mobile-menu__items{
+	padding: 40px;
+	height: 100%;
+	width: 70%;
+	background-color: white;
+
+	transform: translateX(-100%);
+	transition: transform 250ms $timing-function;
+	.mobile-menu__nav.is-open &{
+		transform: translateX(0);
+	}
+}
+.mobile-menu__item{
+	font-size: 34px;
+
+	& + &{
+		margin-top: 20px;
+	}
+	&:first-child{
+		text-align: center;
+	}
+}
