@@ -5,28 +5,50 @@ width: 100%;
 
 background-color: getColor('extra-bg');
 background-image: url('../img/hero/hero@1x.jpeg');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+@extend %background-img;
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
 		&{
-			background-image: url('../img/hero/hero@2x.jpeg');
+	background-image: url('../img/hero/hero@2x.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+		}
+	}
+	@include for-phone-only{
+	background:linear-gradient(transparent, getColor('accent') 0), url('../img/hero/hero@1x.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+	background:linear-gradient(transparent, getColor('accent') 0), url('../img/hero/hero@2x.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 		}
 	}
 }
+}
 
 .hero__box{
-	background-color: getColor('accent');
-	position: absolute;
-	top: 50%;
-	right: 50%;
-	border-radius: 20px;
-
-	transform: translate(50%, -50%);
+	@include for-tablet-up{
+		background-color: getColor('accent');
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		border-radius: 20px;
+	
+		transform: translate(50%, -50%);
+	}
 }
 .hero__information{
 	margin: 0 auto;
@@ -44,7 +66,7 @@ background-attachment: fixed;
 position: relative;
 font-family: 'Montserrat';
 font-weight: 700;
-font-size: 62px;
+font-size: 42px;
 line-height: 1.22em;
 color: getColor('title');
 padding-bottom: 25px;
@@ -53,7 +75,9 @@ margin-bottom: 25px;
 		@extend %under-line;
 		width: 185px;
 }
-
+@include for-phone-only{
+	padding-top: 60px;
+}
 @include for-tablet-up{
 	font-size: 62px;
 }

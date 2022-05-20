@@ -1,0 +1,41 @@
+.team{
+	width: 100%;
+background-color: getColor('extra-bg');
+
+background:linear-gradient(transparent, getColor('accent') 0), url('../img/team/team1@1x.jpeg');
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-attachment: fixed;
+
+padding: 80px 0;
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+background:linear-gradient(transparent, getColor('accent') 0), url('../img/team/team1@2x.jpeg');
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-attachment: fixed;		
+}
+	}
+// display: none;
+// @include for-tablet-up{
+// 	display: block;
+// }
+}
+.team__title{
+	position: relative;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+
+	text-align: left;
+	&::after{
+		@extend %under-line;
+	}
+}
+.team__text{
+	max-width: 500px;
+	
+}

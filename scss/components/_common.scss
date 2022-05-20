@@ -17,7 +17,7 @@ p{
 
 img{
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -26,6 +26,9 @@ font-family: 'Open Sans';
 font-size: 16px;
 line-height: 1.68em;
 color: getColor('primary-text');
+&.modal-open{
+		overflow: hidden;
+	}
 }
 
 section{
@@ -43,6 +46,20 @@ text-align: center;
 .logo--position{
 	width: 44px;
    margin: 0 auto;
+}
+
+.button {
+	max-width: 160px;
+	border-radius: 21px;
+	background-color: getColor('title');
+	color: getColor('accent');
+	text-align: center;
+	padding: 12px 60px;
+	border: none;
+	&:hover, &:focus{
+		background-color: getColor('accent');
+		color: getColor('title')
+	}
 }
 
 .visually-hidden {
