@@ -1,0 +1,37 @@
+
+.about-hero {
+	position: relative;
+
+	background-color: getColor('extra-bg');
+	background-image: url('../img/about-hero/about-hero@1x.jpeg');
+	@extend %background-img;
+	height: 400px;
+	width: 100%;
+	@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+	background-image: url('../img/about-hero/about-hero@2x.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+		}
+	}
+}
+
+.about-hero__title {
+	@extend %center;
+	
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 60px;
+line-height: 1.33em;
+
+	color: getColor('title');
+
+	@include for-phone-only{
+		font-size: 35px;
+	}
+	}
+

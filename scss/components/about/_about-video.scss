@@ -1,0 +1,9 @@
+.about-video{
+position: relative;
+}
+.about-video__icon{
+	@extend %center;
+}
+.about-video__frame{
+	width: 100%;
+}

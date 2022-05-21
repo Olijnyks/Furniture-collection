@@ -1,0 +1,27 @@
+.information {
+}
+.information__title {
+	position: relative;
+
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	text-align: left;
+
+	&::after{
+		@extend %under-line;
+		width: 200px;
+	}
+	@include for-phone-only{
+		font-size: 26px;
+	}
+		}
+
+.information__text {
+	& + &{
+		margin-top: 8px;
+	}
+	@include for-desktop-up{
+		margin-left: 280px;
+	}
+		}
+
