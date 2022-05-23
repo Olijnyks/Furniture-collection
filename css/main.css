@@ -326,6 +326,12 @@ summary {
   }
 }
 
+@media (min-width: 960px) {
+  .container {
+    width: 890px;
+  }
+}
+
 @media (min-width: 1140px) {
   .container {
     width: 1110px;
@@ -395,14 +401,51 @@ section {
   max-width: 160px;
   border-radius: 21px;
   background-color: rgba(54, 56, 56, 0.9);
-  color: rgba(255, 255, 240, 0.7);
+  color: rgba(255, 255, 240, 0.8);
   text-align: center;
   padding: 12px 60px;
-  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
-  background-color: rgba(255, 255, 240, 0.7);
+  background-color: rgba(255, 255, 240, 0.8);
+  color: rgba(54, 56, 56, 0.9);
+  border: 1px solid #979797;
+}
+
+.button-white {
+  padding: 6px 15px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33em;
+  background-color: transparent;
+  border: 1px solid #979797;
+  border-radius: 20px;
+  color: #979797;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-white:hover, .button-white:focus {
+  background-color: rgba(255, 255, 240, 0.8);
+  border: 1px solid rgba(54, 56, 56, 0.9);
+  color: rgba(54, 56, 56, 0.9);
+}
+
+@media (min-width: 600px) and (max-width: 1139px) {
+  .button-white {
+    padding: 5px;
+    font-weight: 400;
+  }
+}
+
+.button-accent {
+  background-color: rgba(255, 255, 240, 0.8);
+  border: 1px solid rgba(54, 56, 56, 0.9);
   color: rgba(54, 56, 56, 0.9);
 }
 
@@ -634,8 +677,8 @@ section {
 
 @media (max-width: 599px) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.7))), url("../img/hero/hero@1x.jpeg");
-    background: linear-gradient(transparent, rgba(255, 255, 240, 0.7) 0), url("../img/hero/hero@1x.jpeg");
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.8))), url("../img/hero/hero@1x.jpeg");
+    background: linear-gradient(transparent, rgba(255, 255, 240, 0.8) 0), url("../img/hero/hero@1x.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -645,18 +688,17 @@ section {
 
 @media screen and (max-width: 599px) and (min-device-pixel-ratio: 2), screen and (max-width: 599px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 599px) and (min-resolution: 192dpi), screen and (max-width: 599px) and (min-resolution: 2dppx) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.7))), url("../img/hero/hero@2x.jpeg");
-    background: linear-gradient(transparent, rgba(255, 255, 240, 0.7) 0), url("../img/hero/hero@2x.jpeg");
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.8))), url("../img/hero/hero@2x.jpeg");
+    background: linear-gradient(transparent, rgba(255, 255, 240, 0.8) 0), url("../img/hero/hero@2x.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
   }
 }
 
 @media (min-width: 600px) {
   .hero__box {
-    background-color: rgba(255, 255, 240, 0.7);
+    background-color: rgba(255, 255, 240, 0.8);
     position: absolute;
     top: 50%;
     right: 50%;
@@ -713,6 +755,12 @@ section {
 @media (min-width: 1140px) {
   .hero__title {
     font-size: 94px;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero__text {
+    color: rgba(54, 56, 56, 0.9);
   }
 }
 
@@ -822,7 +870,7 @@ section {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgba(255, 255, 240, 0.7);
+  background-color: rgba(255, 255, 240, 0.8);
 }
 
 .new-collection__link:hover .new-collection__box, .new-collection__link:focus .new-collection__box {
@@ -844,8 +892,8 @@ section {
 .team {
   width: 100%;
   background-color: #363838;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.7))), url("../img/team/team1@1x.jpeg");
-  background: linear-gradient(transparent, rgba(255, 255, 240, 0.7) 0), url("../img/team/team1@1x.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.8))), url("../img/team/team1@1x.jpeg");
+  background: linear-gradient(transparent, rgba(255, 255, 240, 0.8) 0), url("../img/team/team1@1x.jpeg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -855,12 +903,19 @@ section {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .team {
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.7))), url("../img/team/team1@2x.jpeg");
-    background: linear-gradient(transparent, rgba(255, 255, 240, 0.7) 0), url("../img/team/team1@2x.jpeg");
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0, rgba(255, 255, 240, 0.8))), url("../img/team/team1@2x.jpeg");
+    background: linear-gradient(transparent, rgba(255, 255, 240, 0.8) 0), url("../img/team/team1@2x.jpeg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 599px) {
+  .team {
+    background-attachment: local;
+    background-position: left;
   }
 }
 
@@ -873,6 +928,12 @@ section {
 
 .team__text {
   max-width: 500px;
+}
+
+@media (max-width: 599px) {
+  .team__text {
+    color: rgba(54, 56, 56, 0.9);
+  }
 }
 
 .blog__title {

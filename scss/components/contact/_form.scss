@@ -52,12 +52,15 @@ border: 1px solid getColor('footer-bg');
 border-radius: 20px;
 padding: 6px 16px;
 margin-bottom: 13px;
-width: 407px;
+width: 100%;
 height: 40px;
-@include for-desktop-up{
+@media (min-width: 1170px){
 	& + &{
 		margin-left: 11px;
 	}
+}
+@include for-desktop-up{
+	width: 407px;
 }
 		}
 

@@ -380,6 +380,31 @@ section {
   color: rgba(54, 56, 56, 0.9);
 }
 
+.button-white {
+  padding: 6px 15px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33em;
+  background-color: transparent;
+  border: 1px solid #979797;
+  border-radius: 20px;
+  color: #979797;
+  cursor: pointer;
+}
+
+.button-white:hover, .button-white:focus {
+  background-color: rgba(255, 255, 240, 0.7);
+  border: 1px solid rgba(54, 56, 56, 0.9);
+  color: rgba(54, 56, 56, 0.9);
+}
+
+.button-accent {
+  background-color: rgba(255, 255, 240, 0.7);
+  border: 1px solid rgba(54, 56, 56, 0.9);
+  color: rgba(54, 56, 56, 0.9);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -621,31 +646,6 @@ section {
   .gallery__item + .gallery__item {
     margin-left: 25px;
   }
-}
-
-.button-white {
-  padding: 6px 16px;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 2em;
-  background-color: transparent;
-  border: 1px solid #979797;
-  border-radius: 20px;
-  color: #979797;
-  cursor: pointer;
-}
-
-.button-white:hover, .button-white:focus {
-  background-color: rgba(255, 255, 240, 0.7);
-  border: 1px solid rgba(54, 56, 56, 0.9);
-  color: rgba(54, 56, 56, 0.9);
-}
-
-.button-accent {
-  background-color: rgba(255, 255, 240, 0.7);
-  border: 1px solid rgba(54, 56, 56, 0.9);
-  color: rgba(54, 56, 56, 0.9);
 }
 
 @media (min-width: 600px) {

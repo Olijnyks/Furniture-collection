@@ -20,10 +20,10 @@ background-size: cover;
 background-attachment: fixed;		
 }
 	}
-// display: none;
-// @include for-tablet-up{
-// 	display: block;
-// }
+@include for-phone-only{
+	background-attachment:local;
+	background-position: left;
+}
 }
 .team__title{
 	position: relative;
@@ -37,5 +37,7 @@ background-attachment: fixed;
 }
 .team__text{
 	max-width: 500px;
-	
+	@include for-phone-only{
+		color: getColor('title');
+	}
 }

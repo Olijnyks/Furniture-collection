@@ -55,13 +55,44 @@ text-align: center;
 	color: getColor('accent');
 	text-align: center;
 	padding: 12px 60px;
-	border: none;
+	border: 1px solid transparent;
+	transition: color 250ms $timing-function, background-color 250ms $timing-function;
 	&:hover, &:focus{
 		background-color: getColor('accent');
-		color: getColor('title')
+		color: getColor('title');
+		border: 1px solid getColor('line');
 	}
 }
+.button-white {
+	padding: 6px 15px;
+	margin: 0;
 
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.33em;
+
+	background-color: transparent;
+	border: 1px solid getColor('line');
+	border-radius: 20px;
+	color: getColor('line');
+
+	cursor: pointer;
+	transition: color 250ms $timing-function, background-color 250ms $timing-function;
+		&:hover, &:focus{
+		background-color: getColor('accent');
+		border: 1px solid getColor('title');
+		color: getColor('title');
+	}
+	@include for-tablet-only{
+		padding: 5px;
+		font-weight: 400;
+	}
+}
+.button-accent{
+background-color: getColor('accent');
+border: 1px solid getColor('title');
+color: getColor('title');
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;

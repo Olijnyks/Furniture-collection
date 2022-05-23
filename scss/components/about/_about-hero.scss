@@ -18,6 +18,10 @@
 	background-attachment: fixed;
 		}
 	}
+	@include for-phone-only{
+	background-attachment:local;
+	background-position: center;
+}
 }
 
 .about-hero__title {

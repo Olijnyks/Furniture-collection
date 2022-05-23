@@ -20,32 +20,6 @@
 	}
 		}
 
-.button-white {
-	padding: 6px 16px;
-	margin: 0;
-
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 2em;
-
-	background-color: transparent;
-	border: 1px solid getColor('line');
-	border-radius: 20px;
-	color: getColor('line');
-
-	cursor: pointer;
-		&:hover, &:focus{
-		background-color: getColor('accent');
-		border: 1px solid getColor('title');
-		color: getColor('title');
-	}
-}
-.button-accent{
-background-color: getColor('accent');
-border: 1px solid getColor('title');
-color: getColor('title');
-}
-
 //--------gallery__photo --------
 .gallery__photo {
 	@include for-tablet-up{

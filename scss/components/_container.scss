@@ -10,6 +10,9 @@
 	@include for-tablet-up {
 		width: 570px;
 	}
+	@media (min-width: 960px){
+		width: 890px;
+	}
 
 	@include for-desktop-up {
 		width: 1110px;
