@@ -1,172 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home furniture</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/any-icon" />
+    <link rel="stylesheet" href="./css/gallery.min.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home furniture</title>
-	<link rel="stylesheet" href="./css/gallery.min.css">
-</head>
-
-<body>
-	<header class="header">
-		<div class="container">
-			<nav class="menu">
-				<ul class="menu__items">
-					<li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
-					<li class="menu__item"><a class="menu__link current" href="./gallery.html">Gallery</a></li>
-				</ul>
-				<a class="logo logo--position" href="./index.html">
-					<svg class="logo__img" width=55 height=40>
-						<use href='./img/sprite.svg#logo'></use>
-					</svg>
-				</a>
-				<ul class="menu__items">
-					<li class="menu__item"><a class="menu__link" href="./blog.html">Blog</a></li>
-					<li class="menu__item"><a class="menu__link" href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="mobile-menu">
-				<a class="logo logo--mobile" href="./index.html">
-					<svg class="logo__img" width=55 height=40>
-						<use href='./img/sprite.svg#logo'></use>
-					</svg>
-				</a>
-				<button class="mobile-menu__button" type="button" aria-expanded="false" aria-controls="mobile-menu__nav"
-					data-menu-button>
-					<svg class="mobile-menu__img" width=40 height=30 aria-label="switch menu">
-						<use class="mobile-menu__icon-menu" href='./img/sprite.svg#menu'></use>
-						<use class="mobile-menu__icon-close" href='./img/sprite.svg#close'></use>
-					</svg>
-				</button>
-				<nav class="mobile-menu__nav" id="mobile-menu__nav" data-menu>
-					<ul class="mobile-menu__items">
-						<li class="mobile-menu__item"><a class="logo" href="./index.html">
-								<svg class="logo__img" width=55 height=40>
-									<use href='./img/sprite.svg#logo'></use>
-								</svg>
-							</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./about.html">About</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./gallery.html">Gallery</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./blog.html">Blog</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section class="gallery">
-			<div class="container">
-			<ul class="gallery__menu">
-				<li class="gallery__item"><button class="button-white" type="button">Bedroom furniture</button></li>
-				<li class="gallery__item"><button class="button-white button-accent" type="button">Living room furniture</button></li>
-				<li class="gallery__item"><button class="button-white" type="button">Office furniture</button></li>
-				<li class="gallery__item"><button class="button-white" type="button">Dining room futniture</button></li>
-				<li class="gallery__item"><button class="button-white" type="button">Chair</button></li>
-			</ul>
-			<ul class="gallery__photo">
-				<li class="gallery__list gallery__img--big">
-					<img class="gallery__img"
-						srcset="./img/new-collection/new-1@1x.jpeg 1x, ./img/new-collection/new-1@2x.jpeg 2x"
-						src="./img/new-collection/new-1@1x.jpeg" alt="photo of furniture">
-				</li>
-				<li class="gallery__list">
-					<img class="gallery__img"
-						srcset="./img/about-gallery/about-gallery3@1x.jpeg 1x, ./img/about-gallery/about-gallery3@2x.jpeg 2x"
-						src="./img/about-gallery/about-gallery3@1x.jpeg" alt="photo of furniture">
-				</li>
-				<li class="gallery__list"><img class="gallery__img"
-					srcset="./img/about-gallery/about-gallery5@1x.jpeg 1x, ./img/about-gallery/about-gallery5@1x.jpeg 2x"
-					src="./img/about-gallery/about-gallery5@1x.jpeg" alt="photo of furniture" ></li>
-					<li class="gallery__list"><img class="gallery__img" srcset="./img/new-collection/new-2@1x.jpeg 1x, ./img/new-collection/new-2@2x.jpeg 2x"
-						src="./img/new-collection/new-2@1x.jpeg" alt="photo of furniture">
-					</li>
-				<li class="gallery__list"><img class="gallery__img" srcset="./img/new-collection/new-4@1x.jpeg 1x, ./img/new-collection/new-4@2x.jpeg 2x"
-					src="./img/new-collection/new-4@1x.jpeg" alt="photo of furniture"></li>
-				<li class="gallery__list"><img class="gallery__img"
-					srcset="./img/about-gallery/about-gallery2@1x.jpeg 1x, ./img/about-gallery/about-gallery2@2x.jpeg"
-					src="./img/about-gallery/about-gallery2@1x.jpeg" alt="photo of furniture">
-</li>
-				<li class="gallery__list"><img class="gallery__img"
-					srcset="./img/about-gallery/about-gallery4@1x.jpeg 1x, ./img/about-gallery/about-gallery4@1x.jpeg 2x"
-					src="./img/about-gallery/about-gallery4@1x.jpeg" alt="photo of furniture">
-</li>
-				<li class="gallery__list gallery__img--big"><img class="gallery__img" srcset="./img/new-collection/new-3@1x.jpeg 1x, ./img/new-collection/new-3@2x.jpeg 2x"
-					src="./img/new-collection/new-3@1x.jpeg" alt="photo of furniture">
-</li>
-<li class="gallery__list"><img class="gallery__img"
-	srcset="./img/about-gallery/about-gallery1@1x.jpeg, ./img/about-gallery/about-gallery1@2x.jpeg 2x"
-	src="./img/about-gallery/about-gallery1@1x.jpeg" alt="photo of furniture" ></li>
-	<li class="gallery__list"><img class="gallery__img"
-		srcset="./img/new-collection/new-5@1x.jpeg 1x, ./img/new-collection/new-5@2x.jpeg 2x"
-		src="./img/new-collection/new-5@1x.jpeg" alt="photo of furniture"></li>
-			</ul>
-		</div>
-		</section>
-	</main>
-			<footer class="footer">
-				<div class="footer__information">
-					<div class="container footer--position">
-						<div class="footer-contact">
-							<strong class="footer-contact__title">Contact Us</strong>
-							<p class="footer-contact__text">Thank you for your interest! You can write to us or subscribe to our
-								newsletter</p>
-							<div class="mail">
-								<svg class="mail__svg" width="16" height="16">
-									<use href='./img/sprite.svg#icon-envelope'></use>
-								</svg>
-								<p class="mail__text">home_furniture@email.com</p>
-							</div>
-							<form class="footer__form">
-								<input class="footer__input" type="email" autocomplete="email">
-								<button class="button" type="button">Send</button>
-							</form>
-						</div>
-						<ul class="social-networks">
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-facebook'></use>
-									</svg>
-									<p class="social-networks__text">Facebook</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-instagram'></use>
-									</svg>
-									<p class="social-networks__text">Instagram</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-pinterest'></use>
-									</svg>
-									<p class="social-networks__text">Pinterest</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-whatsapp'></use>
-									</svg>
-									<p class="social-networks__text">WhatsApp</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-youtube'></use>
-									</svg>
-									<p class="social-networks__text">Youtube</p>
-								</a></li>
-						</ul>
-						<ul class="info">
-							<li class="info__item"><a class="info__link" href="#">Delivery</a></li>
-							<li class="info__item"><a class="info__link" href="#">FAQ</a></li>
-							<li class="info__item"><a class="info__link" href="#">Help</a></li>
-							<li class="info__item"><a class="info__link" href="#">More About Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__copyright">
-					<p>674 Gonzales Drive. Washington, PA 15301</p>
-				</div>
-			</footer>
-			<script src="./js/menu.js"></script>
-</body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="./about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link current" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+          <a class="logo logo--position" href="./index.html">
+            <svg class="logo__img" width="55" height="40">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu">
+          <a class="logo logo--mobile" href="./index.html">
+            <svg class="logo__img" width="55" height="40">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="mobile-menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu__nav"
+            data-menu-button
+          >
+            <svg
+              class="mobile-menu__img"
+              width="40"
+              height="30"
+              aria-label="switch menu"
+            >
+              <use
+                class="mobile-menu__icon-menu"
+                href="./img/sprite.svg#menu"
+              ></use>
+              <use
+                class="mobile-menu__icon-close"
+                href="./img/sprite.svg#close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav" id="mobile-menu__nav" data-menu>
+            <ul class="mobile-menu__items">
+              <li class="mobile-menu__item">
+                <a class="logo" href="./index.html">
+                  <svg class="logo__img" width="55" height="40">
+                    <use href="./img/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./about.html">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./blog.html">Blog</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <ul class="gallery__menu">
+            <li class="gallery__item">
+              <button class="button-white" type="button">
+                Bedroom furniture
+              </button>
+            </li>
+            <li class="gallery__item">
+              <button class="button-white button-accent" type="button">
+                Living room furniture
+              </button>
+            </li>
+            <li class="gallery__item">
+              <button class="button-white" type="button">
+                Office furniture
+              </button>
+            </li>
+            <li class="gallery__item">
+              <button class="button-white" type="button">
+                Dining room futniture
+              </button>
+            </li>
+            <li class="gallery__item">
+              <button class="button-white" type="button">Chair</button>
+            </li>
+          </ul>
+          <ul class="gallery__photo">
+            <li class="gallery__list gallery__img--big">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/new-collection/new-1@1x.jpeg 1x,
+                  ./img/new-collection/new-1@2x.jpeg 2x
+                "
+                src="./img/new-collection/new-1@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/about-gallery/about-gallery3@1x.jpeg 1x,
+                  ./img/about-gallery/about-gallery3@2x.jpeg 2x
+                "
+                src="./img/about-gallery/about-gallery3@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/about-gallery/about-gallery5@1x.jpeg 1x,
+                  ./img/about-gallery/about-gallery5@1x.jpeg 2x
+                "
+                src="./img/about-gallery/about-gallery5@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/new-collection/new-2@1x.jpeg 1x,
+                  ./img/new-collection/new-2@2x.jpeg 2x
+                "
+                src="./img/new-collection/new-2@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/new-collection/new-4@1x.jpeg 1x,
+                  ./img/new-collection/new-4@2x.jpeg 2x
+                "
+                src="./img/new-collection/new-4@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/about-gallery/about-gallery2@1x.jpeg 1x,
+                  ./img/about-gallery/about-gallery2@2x.jpeg
+                "
+                src="./img/about-gallery/about-gallery2@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/about-gallery/about-gallery4@1x.jpeg 1x,
+                  ./img/about-gallery/about-gallery4@1x.jpeg 2x
+                "
+                src="./img/about-gallery/about-gallery4@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list gallery__img--big">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/new-collection/new-3@1x.jpeg 1x,
+                  ./img/new-collection/new-3@2x.jpeg 2x
+                "
+                src="./img/new-collection/new-3@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/about-gallery/about-gallery1@1x.jpeg,
+                  ./img/about-gallery/about-gallery1@2x.jpeg 2x
+                "
+                src="./img/about-gallery/about-gallery1@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+            <li class="gallery__list">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./img/new-collection/new-5@1x.jpeg 1x,
+                  ./img/new-collection/new-5@2x.jpeg 2x
+                "
+                src="./img/new-collection/new-5@1x.jpeg"
+                alt="photo of furniture"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <div class="container footer--position">
+          <div class="footer-contact">
+            <strong class="footer-contact__title">Contact Us</strong>
+            <p class="footer-contact__text">
+              Thank you for your interest! You can write to us or subscribe to
+              our newsletter
+            </p>
+            <div class="mail">
+              <svg class="mail__svg" width="16" height="16">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
+              <p class="mail__text">home_furniture@email.com</p>
+            </div>
+            <form class="footer__form">
+              <input class="footer__input" type="email" autocomplete="email" />
+              <button class="button" type="button">Send</button>
+            </form>
+          </div>
+          <ul class="social-networks">
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <p class="social-networks__text">Facebook</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <p class="social-networks__text">Instagram</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <p class="social-networks__text">Pinterest</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+                <p class="social-networks__text">WhatsApp</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <p class="social-networks__text">Youtube</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="info">
+            <li class="info__item">
+              <a class="info__link" href="#">Delivery</a>
+            </li>
+            <li class="info__item"><a class="info__link" href="#">FAQ</a></li>
+            <li class="info__item"><a class="info__link" href="#">Help</a></li>
+            <li class="info__item">
+              <a class="info__link" href="#">More About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>674 Gonzales Drive. Washington, PA 15301</p>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

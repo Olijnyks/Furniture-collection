@@ -1,220 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home furniture</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/any-icon" />
+    <link rel="stylesheet" href="./css/blog.min.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home furniture</title>
-	<link rel="stylesheet" href="./css/blog.min.css">
-</head>
-
-<body>
-	<header class="header">
-		<div class="container">
-			<nav class="menu">
-				<ul class="menu__items">
-					<li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
-					<li class="menu__item"><a class="menu__link" href="./gallery.html">Gallery</a></li>
-				</ul>
-				<a class="logo logo--position" href="./index.html">
-					<svg class="logo__img" width=55 height=40>
-						<use href='./img/sprite.svg#logo'></use>
-					</svg>
-				</a>
-				<ul class="menu__items">
-					<li class="menu__item"><a class="menu__link current" href="./blog.html">Blog</a></li>
-					<li class="menu__item"><a class="menu__link" href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="mobile-menu">
-				<a class="logo logo--mobile" href="./index.html">
-					<svg class="logo__img" width=55 height=40>
-						<use href='./img/sprite.svg#logo'></use>
-					</svg>
-				</a>
-				<button class="mobile-menu__button" type="button" aria-expanded="false" aria-controls="mobile-menu__nav"
-					data-menu-button>
-					<svg class="mobile-menu__img" width=40 height=30 aria-label="switch menu">
-						<use class="mobile-menu__icon-menu" href='./img/sprite.svg#menu'></use>
-						<use class="mobile-menu__icon-close" href='./img/sprite.svg#close'></use>
-					</svg>
-				</button>
-				<nav class="mobile-menu__nav" id="mobile-menu__nav" data-menu>
-					<ul class="mobile-menu__items">
-						<li class="mobile-menu__item"><a class="logo" href="./index.html">
-								<svg class="logo__img" width=55 height=40>
-									<use href='./img/sprite.svg#logo'></use>
-								</svg>
-							</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./about.html">About</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./gallery.html">Gallery</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./blog.html">Blog</a></li>
-						<li class="mobile-menu__item"><a class="menu__link" href="./contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section class="articles">
-			<div class="container articles__container">
-								<div class="articles__search">
-									<form class="search">
-										<input type="search" name="text" class="search__input" placeholder="Search">
-										<input type="submit" name="" class="search__submit" value="">
-									</form>
-									<div class="categories">
-										<h3 class="categories__title">Categories</h3>
-										<ul class="categories__items">
-											<li class="categories__item"><button type="button" class="categories__button">Dining room (1)</button></li>
-											<li class="categories__item"><button type="button" class="categories__button">Office furniture (12)</button></li>
-											<li class="categories__item"><button type="button" class="categories__button">Design (4)</button></li>
-											<li class="categories__item"><button type="button" class="categories__button">Bedroom Furniture (1)</button></li>
-										</ul>
-									</div>
-									<div class="tags">
-										<h3 class="tags__title">Tags</h3>
-													<ul class="tags__menu">
-														<li class="tags__item"><button class="button-white" type="button">Bedroom furniture</button></li>
-														<li class="tags__item"><button class="button-white" type="button">Living room furniture</button>
-														</li>
-														<li class="tags__item"><button class="button-white" type="button">Office furniture</button></li>
-														<li class="tags__item"><button class="button-white" type="button">Dining room futniture</button></li>
-														<li class="tags__item"><button class="button-white" type="button">Chair</button></li>
-													</ul>
-									</div>
-														<ul class="form-networks">
-															<li class="form__items"><a class="form__link" href="#">
-																	<svg class="form__svg" width='16' height='18'>
-																		<use href='./img/sprite.svg#icon-facebook'></use>
-																	</svg>
-																</a></li>
-															<li class="form__items"><a class="form__link" href="#">
-																	<svg class="form__svg" width='16' height='18'>
-																		<use href='./img/sprite.svg#icon-instagram'></use>
-																	</svg>
-																</a></li>
-															<li class="form__items"><a class="form__link" href="#">
-																	<svg class="form__svg" width='16' height='18'>
-																		<use href='./img/sprite.svg#icon-pinterest'></use>
-																	</svg>
-																</a></li>
-															<li class="form__items"><a class="form__link" href="#">
-																	<svg class="form__svg" width='16' height='18'>
-																		<use href='./img/sprite.svg#icon-whatsapp'></use>
-																	</svg>
-																</a></li>
-															<li class="form__items"><a class="form__link" href="#">
-																	<svg class="form__svg" width='16' height='18'>
-																		<use href='./img/sprite.svg#icon-youtube'></use>
-																	</svg>
-																</a></li>
-														</ul>
-								</div>
-				<ul class="blog__list">
-					<li class="blog__article">
-						<a class="blog__link" href="./blog_coffee-tables.html">
-							<img class="blog__img" srcset="./img/blog/blog1@1x.jpeg 1x, ./img/blog/blog1@2x.jpeg 2x" src="./img/blog/blog1@1x.jpeg"
-								alt="photo of furniture" width="540" height="310">
-							<p class="blog__information">May 12, 2022 | by Ann Summers | Inrerior</p>
-							<h3 class="blog__subtitle title">Trendy colors this season</h3>
-							<p class="blog__text">Spring 2022 will deliver some of the boldest colors yet, from neon green to hot pink. Mood-boosting hues were so
-							prominent on the runways from New York to Paris, it felt like an invitation to add Spring color trends into our
-							wardrobe, whether we add a pop of pink with accessories or opt for head-to-toe brights in a monochromatic blue suit.</p>
-						</a>
-					</li>
-					<figure class="blockquote">
-						<blockquote class="blockquote__contain">
-							<p class="blockquote__text">“Simplicity is not the goal. It is the by-product of a good idea and modest expectations”</p>
-							<figcaption class="blockquote__autor">Paul Rand</figcaption>
-						</blockquote>
-					</figure>
-					<li class="blog__article">
-						<a class="blog__link" href="./blog_coffee-tables.html">
-							<img class="blog__img"
-								srcset="./img/about-gallery/about-gallery3@1x.jpeg 1x, ./img/about-gallery/about-gallery3@2x.jpeg 2x"
-								src="./img/about-gallery/about-gallery3@1x.jpeg" alt="photo of furniture" width="350" height="350">
-							<p class="blog__information">May 1, 2022 |</p>
-							<h3 class="blog__subtitle title">Parla to launch new furniture collection at Clerkenwell Design Week</h3>
-						</a>
-					</li>
-					<li class="blog__article">
-						<a class="blog__link" href="./blog_coffee-tables.html">
-							<img class="blog__img"
-								srcset="./img/about-gallery/about-gallery1@1x.jpeg 1x, ./img/about-gallery/about-gallery1@2x.jpeg 2x"
-								src="./img/about-gallery/about-gallery1@1x.jpeg" alt="photo of furniture" width="350" height="350">
-							<p class="blog__information">March 9 , 2022 | by Ann Summers | Table Furniture</p>
-							<h3 class="blog__subtitle title">The 24 Very Best Coffee Tables</h3>
-							<p class="blog__text">Spring 2022 will deliver some of the boldest colors yet, from neon green to hot pink.
-								Choosing a coffee table can feel like a daunting task, but there are actually a few simple rules for getting it right.</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</main>
-			<footer class="footer">
-				<div class="footer__information">
-					<div class="container footer--position">
-						<div class="footer-contact">
-							<strong class="footer-contact__title">Contact Us</strong>
-							<p class="footer-contact__text">Thank you for your interest! You can write to us or subscribe to our
-								newsletter</p>
-							<div class="mail">
-								<svg class="mail__svg" width="16" height="16">
-									<use href='./img/sprite.svg#icon-envelope'></use>
-								</svg>
-								<p class="mail__text">home_furniture@email.com</p>
-							</div>
-							<form class="footer__form">
-								<input class="footer__input" type="email" autocomplete="email">
-								<button class="button" type="button">Send</button>
-							</form>
-						</div>
-						<ul class="social-networks">
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-facebook'></use>
-									</svg>
-									<p class="social-networks__text">Facebook</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-instagram'></use>
-									</svg>
-									<p class="social-networks__text">Instagram</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-pinterest'></use>
-									</svg>
-									<p class="social-networks__text">Pinterest</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-whatsapp'></use>
-									</svg>
-									<p class="social-networks__text">WhatsApp</p>
-								</a></li>
-							<li class="social-networks__items"><a class="social-networks__link" href="#">
-									<svg class="social-networks__svg" width='16' height='18'>
-										<use href='./img/sprite.svg#icon-youtube'></use>
-									</svg>
-									<p class="social-networks__text">Youtube</p>
-								</a></li>
-						</ul>
-						<ul class="info">
-							<li class="info__item"><a class="info__link" href="#">Delivery</a></li>
-							<li class="info__item"><a class="info__link" href="#">FAQ</a></li>
-							<li class="info__item"><a class="info__link" href="#">Help</a></li>
-							<li class="info__item"><a class="info__link" href="#">More About Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__copyright">
-					<p>674 Gonzales Drive. Washington, PA 15301</p>
-				</div>
-			</footer>
-			<script src="./js/menu.js"></script>
-</body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="./about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+          <a class="logo logo--position" href="./index.html">
+            <svg class="logo__img" width="55" height="40">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link current" href="./blog.html">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu">
+          <a class="logo logo--mobile" href="./index.html">
+            <svg class="logo__img" width="55" height="40">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="mobile-menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu__nav"
+            data-menu-button
+          >
+            <svg
+              class="mobile-menu__img"
+              width="40"
+              height="30"
+              aria-label="switch menu"
+            >
+              <use
+                class="mobile-menu__icon-menu"
+                href="./img/sprite.svg#menu"
+              ></use>
+              <use
+                class="mobile-menu__icon-close"
+                href="./img/sprite.svg#close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav" id="mobile-menu__nav" data-menu>
+            <ul class="mobile-menu__items">
+              <li class="mobile-menu__item">
+                <a class="logo" href="./index.html">
+                  <svg class="logo__img" width="55" height="40">
+                    <use href="./img/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./about.html">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./blog.html">Blog</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="menu__link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="articles">
+        <div class="container articles__container">
+          <div class="articles__search">
+            <form class="search">
+              <input
+                type="search"
+                name="text"
+                class="search__input"
+                placeholder="Search"
+              />
+              <input type="submit" name="" class="search__submit" value="" />
+            </form>
+            <div class="categories">
+              <h3 class="categories__title">Categories</h3>
+              <ul class="categories__items">
+                <li class="categories__item">
+                  <button type="button" class="categories__button">
+                    Dining room (1)
+                  </button>
+                </li>
+                <li class="categories__item">
+                  <button type="button" class="categories__button">
+                    Office furniture (12)
+                  </button>
+                </li>
+                <li class="categories__item">
+                  <button type="button" class="categories__button">
+                    Design (4)
+                  </button>
+                </li>
+                <li class="categories__item">
+                  <button type="button" class="categories__button">
+                    Bedroom Furniture (1)
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tags">
+              <h3 class="tags__title">Tags</h3>
+              <ul class="tags__menu">
+                <li class="tags__item">
+                  <button class="button-white" type="button">
+                    Bedroom furniture
+                  </button>
+                </li>
+                <li class="tags__item">
+                  <button class="button-white" type="button">
+                    Living room furniture
+                  </button>
+                </li>
+                <li class="tags__item">
+                  <button class="button-white" type="button">
+                    Office furniture
+                  </button>
+                </li>
+                <li class="tags__item">
+                  <button class="button-white" type="button">
+                    Dining room futniture
+                  </button>
+                </li>
+                <li class="tags__item">
+                  <button class="button-white" type="button">Chair</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="form-networks">
+              <li class="form__items">
+                <a class="form__link" href="#">
+                  <svg class="form__svg" width="16" height="18">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__link" href="#">
+                  <svg class="form__svg" width="16" height="18">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__link" href="#">
+                  <svg class="form__svg" width="16" height="18">
+                    <use href="./img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__link" href="#">
+                  <svg class="form__svg" width="16" height="18">
+                    <use href="./img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__link" href="#">
+                  <svg class="form__svg" width="16" height="18">
+                    <use href="./img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="blog__list">
+            <li class="blog__article">
+              <a class="blog__link" href="./blog_coffee-tables.html">
+                <img
+                  class="blog__img"
+                  srcset="
+                    ./img/blog/blog1@1x.jpeg 1x,
+                    ./img/blog/blog1@2x.jpeg 2x
+                  "
+                  src="./img/blog/blog1@1x.jpeg"
+                  alt="photo of furniture"
+                  width="540"
+                  height="310"
+                />
+                <p class="blog__information">
+                  May 12, 2022 | by Ann Summers | Inrerior
+                </p>
+                <h3 class="blog__subtitle title">Trendy colors this season</h3>
+                <p class="blog__text">
+                  Spring 2022 will deliver some of the boldest colors yet, from
+                  neon green to hot pink. Mood-boosting hues were so prominent
+                  on the runways from New York to Paris, it felt like an
+                  invitation to add Spring color trends into our wardrobe,
+                  whether we add a pop of pink with accessories or opt for
+                  head-to-toe brights in a monochromatic blue suit.
+                </p>
+              </a>
+            </li>
+            <figure class="blockquote">
+              <blockquote class="blockquote__contain">
+                <p class="blockquote__text">
+                  “Simplicity is not the goal. It is the by-product of a good
+                  idea and modest expectations”
+                </p>
+                <figcaption class="blockquote__autor">Paul Rand</figcaption>
+              </blockquote>
+            </figure>
+            <li class="blog__article">
+              <a class="blog__link" href="./blog_coffee-tables.html">
+                <img
+                  class="blog__img"
+                  srcset="
+                    ./img/about-gallery/about-gallery3@1x.jpeg 1x,
+                    ./img/about-gallery/about-gallery3@2x.jpeg 2x
+                  "
+                  src="./img/about-gallery/about-gallery3@1x.jpeg"
+                  alt="photo of furniture"
+                  width="350"
+                  height="350"
+                />
+                <p class="blog__information">May 1, 2022 |</p>
+                <h3 class="blog__subtitle title">
+                  Parla to launch new furniture collection at Clerkenwell Design
+                  Week
+                </h3>
+              </a>
+            </li>
+            <li class="blog__article">
+              <a class="blog__link" href="./blog_coffee-tables.html">
+                <img
+                  class="blog__img"
+                  srcset="
+                    ./img/about-gallery/about-gallery1@1x.jpeg 1x,
+                    ./img/about-gallery/about-gallery1@2x.jpeg 2x
+                  "
+                  src="./img/about-gallery/about-gallery1@1x.jpeg"
+                  alt="photo of furniture"
+                  width="350"
+                  height="350"
+                />
+                <p class="blog__information">
+                  March 9 , 2022 | by Ann Summers | Table Furniture
+                </p>
+                <h3 class="blog__subtitle title">
+                  The 24 Very Best Coffee Tables
+                </h3>
+                <p class="blog__text">
+                  Spring 2022 will deliver some of the boldest colors yet, from
+                  neon green to hot pink. Choosing a coffee table can feel like
+                  a daunting task, but there are actually a few simple rules for
+                  getting it right.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <div class="container footer--position">
+          <div class="footer-contact">
+            <strong class="footer-contact__title">Contact Us</strong>
+            <p class="footer-contact__text">
+              Thank you for your interest! You can write to us or subscribe to
+              our newsletter
+            </p>
+            <div class="mail">
+              <svg class="mail__svg" width="16" height="16">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
+              <p class="mail__text">home_furniture@email.com</p>
+            </div>
+            <form class="footer__form">
+              <input class="footer__input" type="email" autocomplete="email" />
+              <button class="button" type="button">Send</button>
+            </form>
+          </div>
+          <ul class="social-networks">
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <p class="social-networks__text">Facebook</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <p class="social-networks__text">Instagram</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <p class="social-networks__text">Pinterest</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+                <p class="social-networks__text">WhatsApp</p>
+              </a>
+            </li>
+            <li class="social-networks__items">
+              <a class="social-networks__link" href="#">
+                <svg class="social-networks__svg" width="16" height="18">
+                  <use href="./img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <p class="social-networks__text">Youtube</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="info">
+            <li class="info__item">
+              <a class="info__link" href="#">Delivery</a>
+            </li>
+            <li class="info__item"><a class="info__link" href="#">FAQ</a></li>
+            <li class="info__item"><a class="info__link" href="#">Help</a></li>
+            <li class="info__item">
+              <a class="info__link" href="#">More About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>674 Gonzales Drive. Washington, PA 15301</p>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
